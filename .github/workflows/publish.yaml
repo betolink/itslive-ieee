@@ -29,10 +29,18 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v3
 
-      - name: Publish to GitHub Pages
-        shell: bash -l {0}
-        working-directory: paper
-        run: |
-          quarto publish gh-pages paper.qmd --no-browser --no-prompt
+      # - name: Publish to GitHub Pages
+      #   shell: bash -l {0}
+      #   working-directory: paper
+      #   run: |
+      #     quarto publish gh-pages paper.qmd --no-browser --no-prompt
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions
+
+
+      - name: Render and Publish
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
