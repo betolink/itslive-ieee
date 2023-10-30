@@ -107,21 +107,8 @@ The intelligently structured, cloud-optimized ITS_LIVE data formatting, and user
 
 ITS_LIVE provides users with intuitive no-code options to explore the rich dataset through a Voila-based dashboard and a serverless application [Fig 5].. In the following pages we present some of the data visualizations we can obtain from using ITS_LIVE data without costly pre-processing steps using open-source GIS tools like QGIS[8] and the Pangeo stack in Python ([Xarray @Hoyer2017-su], [Zarr @Miles2023-yj] , [HoloViews @Rudiger2020-yr]). A companion GitHub repository contains all the notebooks and QGIs projects used to generate the figures in this article. The focus areas include Malaspina Glacier in Alaska (Fig. 4,7), Pine Island Glacier in Antarctica and Antarctic ice shelves (Fig. 6)
 
-
-  
-
 {{< pagebreak >}}
-
  
-
-{{< pagebreak >}}
-
-\clearpage
- 
-\pagebreak
-
-{{< pagebreak >}}
-
 ::: {#fig-1 fig-env="figure*"}
 
 ![](figures/figure-1-full.jpg)
@@ -168,18 +155,23 @@ What looks like a frequency spectrogram on the right in  this figure is a veloci
 {{< pagebreak >}}
 
 
+\clearpage
+
 **—Keys to success**
 
 Earth Science is undergoing a major transition, from being data-poor to data-rich. The old paradigm of navigating to a webpage, downloading data and working with it locally on one’s computer is quickly dying. We are now entering an era where we will expect shared code to link to low-latency cloud-accessible datasets so the analysis code can run out-of-the-box and be truly reproducible. By breaking down traditional disciplinary barriers of engineering, technology, and Earth science, ITS_LIVE has developed optimized technical solutions to obstacles that might otherwise stand in the way of creating, accessing, exploring, and visualizing such novel and complex datasets. ITS_LIVE was built on Findable, Accessible, Interoperable, and Reusable (FAIR) data principles, and has mitigated many of the challenges surrounding rapid time series analysis of massive archives. By providing intelligently structured cloud-optimized glacier velocity data, ITS_LIVE has reduced the demand for expertise in remote sensing and geospatial analysis, making the data more accessible to a broader range of researchers. By designing to meet user needs and enlisting the help of experts in modern cloud computing, ITS_LIVE has built an active and growing community of scientists that are generating new insights into why and how glaciers have responded to changes in their environment, giving clues as to what our future might hold.
 
-**ACKNOWLEDGMENTS**
 
-The ITS_LIVE user community for their helpful  feedback.
-Pangeo community.
-Copernicus Sentinel data processed by ESA.
-Landsat data courtesy of the U.S. Geological Survey.
-Funding for ITS_LIVE provided by the NASA MEaSUREs program.
+**Acknowledgments**
 
+* The ITS_LIVE user community for their helpful  feedback.
+* Pangeo community.
+* Copernicus Sentinel data processed by ESA.
+* Landsat data courtesy of the U.S. Geological Survey.
+* Funding for ITS_LIVE provided by the NASA MEaSUREs program.
+
+
+***
 
 **Luis A. López** is a Research Software Engineer currently working with the National Snow and Ice Data Center in Boulder, Colorado. His research interests include remote sensing data workflows, cloud computing and open science. Contact him at luis.lopez@nsidc.org
 
