@@ -13,14 +13,14 @@ author:
     affiliations:
         - id: NASA
           name: NASA
-          department: Jet Propulsion Laboratory
+          department: Jet Propulsion Laboratory, California Institute of Technology
   - name: Chad A. Greene
     email: chad.a.greene@jpl.nasa.gov
     orcid: 0000-0001-6710-6297
     affiliations:
         - id: NASA
           name: NASA
-          department: Jet Propulsion Laboratory
+          department: Jet Propulsion Laboratory, California Institute of Technology
   - name: Mark Fahnestock
     email: mfahnestock@alaska.edu
     affiliations:
@@ -38,7 +38,7 @@ author:
     affiliations:
         - id: NASA
           name: NASA
-          department: Jet Propulsion Laboratory
+          department: Jet Propulsion Laboratory, California Institute of Technology
   - name:  Theodore A Scambos
     email: tascambos@Colorado.EDU
     affiliations:
@@ -169,6 +169,7 @@ Earth Science is undergoing a major transition, from being data-poor to data-ric
 * Copernicus Sentinel data processed by ESA.
 * Landsat data courtesy of the U.S. Geological Survey.
 * Funding for ITS_LIVE provided by the NASA MEaSUREs program.
+* A portion of this work was conducted at the Jet Propulsion Laboratory, California Institute of Technology, under contract with the National Aeronautics and Space Administration ©2023 All rights reserved.
 
 
 ***
