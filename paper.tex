@@ -213,8 +213,8 @@ Space}
 
 \affiliation[1]{organization={NSIDC, University of Colorado
 Boulder},,postcodesep={}}
-\affiliation[2]{organization={NASA, Jet Propulsion
-Laboratory},,postcodesep={}}
+\affiliation[2]{organization={NASA, Jet Propulsion Laboratory,
+California Institute of Technology},,postcodesep={}}
 \affiliation[3]{organization={UAF, Geophysical
 Institute},,postcodesep={}}
 \affiliation[4]{organization={UAF, Alaska Satellite
@@ -257,19 +257,19 @@ advancements through open science.
     cloud computing
 \end{keyword}
 \end{frontmatter}
-    \ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, interior hidden, boxrule=0pt, enhanced, borderline west={3pt}{0pt}{shadecolor}, breakable, sharp corners]}{\end{tcolorbox}}\fi
+    \ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[borderline west={3pt}{0pt}{shadecolor}, enhanced, interior hidden, breakable, sharp corners, frame hidden, boxrule=0pt]}{\end{tcolorbox}}\fi
 
 \textbf{---A sea change for Earth Science}
 
 ⏹️ Earth Science is being upended by advancements in cloud computing
-technology, an explosion in remote sensing data collection (Fig. 1), and
-a cultural shift toward open science. The global satellite data record
-has grown too large to be downloaded and analyzed on personal computers,
-machine-learning algorithms have grown too complex to be maintained by
-any single research group, and there is a growing recognition that
-public investments in research are compounded when code is open. NASA is
-embracing the new paradigm, and is moving all Earth observation data
-archives into Earthdata cloud
+technology, an explosion in remote sensing data collection
+(Figure~\ref{fig-1}), and a cultural shift toward open science. The
+global satellite data record has grown too large to be downloaded and
+analyzed on personal computers, machine-learning algorithms have grown
+too complex to be maintained by any single research group, and there is
+a growing recognition that public investments in research are compounded
+when code is open. NASA is embracing the new paradigm, and is moving all
+Earth observation data archives into Earthdata cloud
 https://www.earthdata.nasa.gov/eosdis/cloud-evolution as part of the
 Transform to Open Science initiative
 https://nasa.github.io/Transform-to-Open-Science/. Here we show how
@@ -335,7 +335,7 @@ downloading of data and to optimize for rapid data access and
 large-scale analysis. Dataset generation is carried out in Amazon AWS
 using \citep[HyP3][]{Hogenson2023-cj} , scaling to \textgreater10,000
 cores. HyP3 is an open-source, cloud-native batch processing pipeline
-developed by the Alaska Space Facility for processing optical and
+developed by the Alaska Satellite Facility for processing optical and
 Synthetic Aperture Radar (SAR) imagery that addresses many common issues
 for users of SAR data. Most analysis code is run in the US-West-2 region
 where the majority of the imagery is archived while the Sentinel-2
@@ -394,23 +394,16 @@ recreate local data archives and update local paths.
 
 ITS\_LIVE provides users with intuitive no-code options to explore the
 rich dataset through a Voila-based dashboard and a serverless
-application {[}Fig 5{]}.. In the following pages we present some of the
-data visualizations we can obtain from using ITS\_LIVE data without
+application Fig.~\ref{fig-3} In the following pages we present some of
+the data visualizations we can obtain from using ITS\_LIVE data without
 costly pre-processing steps using open-source GIS tools like QGIS{[}8{]}
 and the Pangeo stack in Python (\citep[Xarray][]{Hoyer2017-su},
 \citep[Zarr][]{Miles2023-yj} , \citep[HoloViews][]{Rudiger2020-yr}). A
 companion GitHub repository contains all the notebooks and QGIs projects
 used to generate the figures in this article. The focus areas include
-Malaspina Glacier in Alaska (Fig. 4,7), Pine Island Glacier in
-Antarctica and Antarctic ice shelves (Fig. 6)
-
-\newpage{}
-
-\newpage{}
-
-\clearpage
-
-\pagebreak
+Malaspina Glacier in Alaska (Figure~\ref{fig-2};Figure~\ref{fig-5}),
+Pine Island Glacier in Antarctica and Antarctic ice shelves
+(Figure~\ref{fig-4})
 
 \newpage{}
 
@@ -418,7 +411,7 @@ Antarctica and Antarctic ice shelves (Fig. 6)
 
 {\centering 
 
-\includegraphics{figures/figure-1-full.jpg}
+\includegraphics{figures/figure-1-consolidated.jpg}
 
 }
 
@@ -504,6 +497,8 @@ or 6.8 m/day.}
 
 \newpage{}
 
+\clearpage
+
 \textbf{---Keys to success}
 
 Earth Science is undergoing a major transition, from being data-poor to
@@ -528,12 +523,27 @@ scientists that are generating new insights into why and how glaciers
 have responded to changes in their environment, giving clues as to what
 our future might hold.
 
-\textbf{ACKNOWLEDGMENTS}
+\textbf{Acknowledgments}
 
-The ITS\_LIVE user community for their helpful feedback. Pangeo
-community. Copernicus Sentinel data processed by ESA. Landsat data
-courtesy of the U.S. Geological Survey. Funding for ITS\_LIVE provided
-by the NASA MEaSUREs program.
+\begin{itemize}
+\tightlist
+\item
+  The ITS\_LIVE user community for their helpful feedback.
+\item
+  Pangeo community.
+\item
+  Copernicus Sentinel data processed by ESA.
+\item
+  Landsat data courtesy of the U.S. Geological Survey.
+\item
+  Funding for ITS\_LIVE provided by the NASA MEaSUREs program.
+\item
+  A portion of this work was conducted at the Jet Propulsion Laboratory,
+  California Institute of Technology, under contract with the National
+  Aeronautics and Space Administration ©2023 All rights reserved.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \textbf{Luis A. López} is a Research Software Engineer currently working
 with the National Snow and Ice Data Center in Boulder, Colorado. His
